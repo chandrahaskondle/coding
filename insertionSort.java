@@ -16,6 +16,9 @@ public class Solution {
             int a[]=new int[N];
             for(i=0;i<N;i++)
                 a[i]=sc.nextInt();
+            
+            
+            
             for(i=1;i<N;i++){
                 j=i-1;
                 key=a[i];
@@ -26,6 +29,8 @@ public class Solution {
                 a[j+1]=key;
                 //System.out.print(j+1+" ");        
             }
+
+            
             T--;    
             //System.out.println();
         }

@@ -1,3 +1,5 @@
+//Implement Bubble Sort and print the total number of swaps involved to sort the array.
+
 import java.io.*;
 import java.util.*;
 
@@ -14,6 +16,8 @@ public class Solution {
             int a[]=new int[N];
             for(i=0;i<N;i++)
                 a[i]=sc.nextInt();
+            
+           
             for(i=0;i<N-1;i++){
                 for(j=0;j<N-i-1;j++){
                     if(a[j]>a[j+1]){
@@ -25,7 +29,9 @@ public class Solution {
                 }
                 if(temp==0)break;
             }
-            System.out.println(temp);
+            
+           
+            //System.out.println(temp);
             T--;
        }
     }

@@ -1,2 +1,0 @@
-# coding
-Codehef,CodeForces, Hackerrank

@@ -13,12 +13,12 @@ public class Solution {
         for(int k=0;k<t;k++){
             int a=sc.nextInt();
             int b=sc.nextInt();
-            int sum=1;
-            int x=100000009+7;
+            long ans=1l;
+            int x=1000000007;
             for(int i=0;i<b;i++){
-                sum*=10%x;
+                 ans=(ans*a)%x;
             }
-            System.out.println(sum%x);
+            System.out.println(ans%x);
         }
     }
 }

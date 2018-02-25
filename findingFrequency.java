@@ -13,7 +13,7 @@ public class Solution {
         String[] str=br.readLine().split(" ");
         HashMap<Integer,Integer> mp=new HashMap<Integer,Integer>();
         for(int k=0;k<n;k++){
-            int m=Integer.parseInt(str[i]);
+            int m=Integer.parseInt(str[k]);
             if(mp.containsKey(m)){
                 int temp=mp.get(m);
                 mp.put(m,temp+1);

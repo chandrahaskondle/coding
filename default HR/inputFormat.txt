@@ -7,9 +7,10 @@
 
 
 
-filename: input2.java
-    2
-    6
-    4 -2 10 12 -8 4 
-    8
-    176 -272 -272 -45 269 -327 -945 176 
+Filename:  https://github.com/chandrahaskondle/coding/blob/master/default%20HR/input2.java
+---------------------------------------------------
+2
+6
+4 -2 10 12 -8 4 
+8
+176 -272 -272 -45 269 -327 -945 176 

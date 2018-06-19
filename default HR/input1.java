@@ -16,7 +16,7 @@ public class Solution {
             int arr[]=new int[n];
             for(int i=0;i<n;i++)
                 arr[i]=Integer.parseInt(str2[i]);
-                     
+            sb.append("0\n");         
         }
     }
 }

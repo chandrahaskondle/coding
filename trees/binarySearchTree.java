@@ -31,6 +31,10 @@ class BinarySearchTree{
         return root;
     }
 	
+	pubilc Node deleteRec(int key, Node root){
+	    
+	}
+	
     public boolean searchNodeRecursive(int key, Node root){
         if( root==null )
 			return false;
@@ -50,7 +54,7 @@ class BinarySearchTree{
         for(int i=0;i<arr.length;i++)
             root=bst.addRec(arr[i],root);
         bst.inorder(root);
-		System.out.println(bst.searchNodeRecursive(19,root));
+		System.out.println(bst.searchNodeRecursive(1,root));
 		
     }
     

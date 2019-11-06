@@ -13,26 +13,45 @@ class BinarySearchTree{
         }
     }
     
-    public void add(int data){
-        Node new_node=new Node(data);
-        while(){
-            
-        }
-        
-        if(root.data <= data){
-            
-        }
-        else{
-            
-        }
+    public void inorder(Node root){
+        if(root == null)
+            return;
+        inorder(root.left);
+        System.out.print(root.data+" ");
+        inorder(root.right);
+    }
+    
+    public Node addRec(int key, Node root){
+        if( root==null )
+            return (new Node(key));
+        else if( root.data> key)
+            root.left= addRec(key, root.left);
+        else
+            root.right= addRec(key, root.right);
+        return root;
+    }
+	
+    public boolean searchNodeRecursive(int key, Node root){
+        if( root==null )
+			return false;
+		else{
+			if( root.data==key )
+				return true;
+			else if( key < root.data )
+				return searchNodeRecursive( key, root.left );
+			else
+				return searchNodeRecursive( key, root.right );
+		}
     }
     
     public static void main(String args[]){
         int arr[]={11, 6, 8, 19, 4, 10, 5, 17, 43, 49, 31};
         BinarySearchTree bst=new BinarySearchTree();
-        for(int i=0;i<11;i++){
-            bst.add(arr[i]);
-        }
+        for(int i=0;i<arr.length;i++)
+            root=bst.addRec(arr[i],root);
+        bst.inorder(root);
+		System.out.println(bst.searchNodeRecursive(19,root));
+		
     }
     
 }

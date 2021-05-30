@@ -1,3 +1,13 @@
+// Find the triplet or 3 numbers which on adding guess the target number
+
+// input: 
+// 10
+// 19 2 23 25 13 11 4 7 5 16
+// 27
+
+// output: 
+// 4 7 16
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
